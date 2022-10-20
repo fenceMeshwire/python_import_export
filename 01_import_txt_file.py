@@ -12,7 +12,7 @@ path = Path.home()  # Set path e.g. to home directory
 os.chdir(path)      # Change working directory
 
 with open('sample.txt', 'rt', encoding='utf-8') as fin:
-    # The read() method stores all lines from the file in a string variable.
+    # The read() method stores all lines from the file in a string variable:
     lines = fin.read()
 
 print(type(lines))  # <class 'str'>
