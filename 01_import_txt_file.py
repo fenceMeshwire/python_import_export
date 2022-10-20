@@ -8,11 +8,21 @@
 import os
 from pathlib import Path
 
-path = Path.home() # Set path e.g. to home directory
-os.chdir(path) # Change working directory
+path = Path.home()  # Set path e.g. to home directory
+os.chdir(path)      # Change working directory
 
 with open('sample.txt', 'rt', encoding='utf-8') as fin:
+    # The read() method stores all lines from the file in a string variable.
     lines = fin.read()
 
-print(type(lines)) # <class 'str'>
-print(lines)
+print(type(lines))  # <class 'str'>
+print(lines)        # print result
+
+with open('sample.txt', 'rt', encoding='utf-8') as fin:
+    # The readlines() method stores all lines from the file in a list:
+    lines = fin.readlines()
+    # Separate newline character \n from list elements:
+    lines = [line.strip() for line in lines]
+
+print(type(lines))  # <class 'list'>
+print(lines)        # print result
