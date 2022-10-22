@@ -9,9 +9,9 @@ import json
 
 article = {
     'product': 'Sledge Hammer XXL',
-    'EAN-Code': '6411501200280',
-    'Country of origin': 'Finnland',
-    'Price': '$70'
+    'ean_Code': '6411501200280',
+    'country_of_origin': 'Finnland',
+    'price': '$70'
 }
 
 # Convert a json object to a string object with dumps() method
